@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ui namespace="StudentsOfClassBoardCell_iPhone">
+  <!--
+    <row></row>
+  -->
+  <col class="wrapper">
+    <!-- add your UI elements here -->
+    <label id="name" class="name public"></label>
+    <label id="class" class="class public"></label>
+    <label id="identifyCode" class="identifyCode public"></label>
+    <image class="line"/>
+  </col>
+   
+  <style type="text/css">
+    .wrapper {
+        width: 100%;
+        height: 60px;
+    }
+    
+    .name{
+    left:10px;
+    color:#a4a4a4;
+    }
+    
+    .class{
+    float: center;
+    color:#a4a4a4;
+    }
+    
+    .identifyCode{
+    right:10px;
+    color:#a4a4a4;
+    }
+    
+    .public{
+    position:absolute;
+    font-size: 15px;
+    v-float: center;
+    width:auto;
+    height:auto;
+    }
+    
+    .line{
+    width:95%;
+    height:1px;
+    background-color:#f0f0f0;
+    position:absolute;
+    bottom:0px;
+    float:center;
+    }
+  </style>
+</ui>

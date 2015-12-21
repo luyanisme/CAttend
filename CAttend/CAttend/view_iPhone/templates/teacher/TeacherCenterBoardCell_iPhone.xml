@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ui namespace="TeacherCenterBoardCell_iPhone">
+  <!--
+    <row></row>
+  -->
+  <col class="wrapper">
+    <!-- add your UI elements here -->
+    <row class="container">
+        <label class="leftPublic">姓名</label>
+        <label id="name" class="rightPublic">张三</label>
+        <image class="line"/>
+    </row>
+    <row class="container">
+        <label class="leftPublic">工号</label>
+        <label id="idCode" class="rightPublic">1201211</label>
+        <image class="line"/>
+    </row>
+    <row class="container">
+        <label class="leftPublic">性别</label>
+        <label id="sex" class="rightPublic">男</label>
+        <image class="line"/>
+    </row>
+    <row class="container">
+        <label class="leftPublic">出生年月</label>
+        <label id="birth" class="rightPublic">1992-7-28</label>
+        <image class="line"/>
+    </row>
+    <row class="container">
+        <label class="leftPublic">老师系别</label>
+        <label id="department" class="rightPublic">信息院</label>
+        <image class="line"/>
+    </row>
+    <row class="container">
+        <label class="leftPublic">电话号码</label>
+        <label id="phoneNum" class="rightPublic">18888888888</label>
+        <image class="line"/>
+    </row>
+    <row class="container">
+        <button class="quit" id="quit">退出</button>
+    </row>
+  </col>
+   
+  <style type="text/css">
+    .wrapper {
+        width: 100%;
+        height:auto;
+    }
+    
+    .container{
+    width: 95%;
+    height: 60px;
+    float:center;
+    }
+    
+    .leftPublic{
+    v-float: center;
+    color:black;
+    width: auto;
+    height: auto;
+    font-size:15px;
+    }
+    
+    .rightPublic{
+    v-float: center;
+    color:#a4a4a4;
+    width: auto;
+    height: auto;
+    position: absolute;
+    right:0px;
+    font-size:15px;
+    }
+    
+    .line{
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    bottom:0px;
+    background-color:#f0f0f0;
+    }
+    
+    .quit{
+    width: 85%;
+    height: 80%;
+    background-color:red;
+    font-size:20px;
+    border-radius: 5px;
+    v-float: center;
+    float: center;
+    }
+  </style>
+</ui>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ui namespace="SignBoard_iPhone">
+  <!--
+    <row></row>
+  -->
+  <col class="wrapper">
+    <col class="wrap_center">
+    <!-- add your UI elements here -->
+    <row class="container">
+        <image class="avater_userName"/>
+        <input id="userName" class="userName" placeholder="用户名"/>
+        <image class="line"/>
+    </row>
+    <row class="container">
+        <image class="avater_password"/>
+        <input id="password" class="password" placeholder="密码"/>
+        <image class="line"/>
+    </row>
+    <row class="container_1">
+        <row class="container_btn_teacher">
+            <button class="mask" id="chooseTeacher"/>
+            <image class="unChoose" id="choose_teacher"/>
+            <label class="teacher">老师</label>
+        </row>
+        <row class="container_btn_student">
+            <button class="mask" id="chooseStudent"/>
+            <image class="unChoose" id="choose_student"/>
+            <label class="student">学生</label>
+        </row>
+        <button class="sign" id="sign">登录</button>
+    </row>
+    </col>
+  </col>
+   
+  <style type="text/css">
+    .wrapper {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .wrap_center{
+    width: 300px;
+    height: auto;
+    v-float: center;
+    float: center;
+    }
+    
+    .container{
+    width: 100%;
+    height: 50px;
+    }
+    
+    .container_1{
+    width: 100%;
+    height: 70px;
+    }
+    
+    .container_btn_teacher{
+    width: 80px;
+    height: 20px;
+    position:absolute;
+    top: 10px;
+    left: 10px;
+    }
+    
+    .container_btn_student{
+    width: 80px;
+    height: 20px;
+    position:absolute;
+    bottom:10px;
+    left: 10px;
+    }
+    
+    .avater_userName{
+    width: 30px;
+    height: 30px;
+    left: 10px;
+    v-float: center;
+    mode:fit;
+    image:url(user_icon.png);
+    }
+    
+    .avater_password{
+    width: 30px;
+    height: 30px;
+    left: 10px;
+    v-float: center;
+    mode:fit;
+    image:url(password_icon.png);
+    }
+    
+    .userName{
+    width: 80%;
+    height:30px;
+    margin-left: 10px;
+    v-float: center;
+    font-size:15px;
+    }
+    
+    .password{
+    width: 80%;
+    height:30px;
+    margin-left: 10px;
+    v-float: center;
+    font-size:15px;
+    input-secure: yes
+    }
+    
+    .line{
+    witdh: 100%;
+    height:1px;
+    background-color:#0F6B19;
+    position:absolute;
+    bottom:0px;
+    }
+    
+    #choose_teacher{
+    width: 15px;
+    height: 15px;
+    mode:fit;
+    v-float:center;
+    image:url(choosed_circle.png);
+    }
+    
+    #choose_student{
+    width: 15px;
+    height: 15px;
+    mode:fit;
+    v-float:center;
+    image:url(unchoose_circle.png);
+    }
+    
+    .teacher{
+    width:auto;
+    height: auto;
+    v-float: center;
+    margin-left:5px;
+    color:#0F6B19;
+    }
+    
+    .student{
+    width:auto;
+    height: auto;
+    v-float: center;
+    margin-left:5px;
+    color:#0F6B19;
+    }
+    
+    .sign{
+    border-width:1px;
+    border-color:#0F6B19;
+    border-radius: 10px;
+    width: 80px;
+    height: 40px;
+    position:absolute;
+    right: 0px;
+    v-float: center;
+    color:#0F6B19;
+    font-size:15px;
+    }
+    
+    .mask{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    }
+  </style>
+</ui>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ui namespace="CourseInfoBoardCell_iPhone">
+  <!--
+    <row></row>
+  -->
+  <col class="wrapper">
+      <row class="container">
+          <label class="leftPublic">课程名称</label>
+          <label id="name" class="rightPublic">高等数学</label>
+          <image class="line"/>
+          <button class="mask" id="tap_name"/>
+      </row>
+      <row class="container">
+          <label class="leftPublic">任课教师</label>
+          <label id="teacher" class="rightPublic">蒋华松</label>
+          <image class="line"/>
+          <button class="mask" id="tap_teacher"/>
+      </row>
+      <row class="container">
+          <label class="leftPublic">教师电话</label>
+          <label id="teacherPhone" class="rightPublic">18888888888</label>
+          <image class="line"/>
+          <button class="mask" id="tap_teacherPhone"/>
+      </row>
+      <row class="container">
+          <label class="leftPublic">教师办公室</label>
+          <label id="office" class="rightPublic">0246</label>
+          <image class="line"/>
+          <button class="mask" id="tap_office"/>
+      </row>
+<!--      <row class="container">-->
+<!--          <label class="leftPublic">课程教材</label>-->
+<!--          <label id="courseBook" class="rightPublic">《高等数学(理工)》</label>-->
+<!--          <image class="line"/>-->
+<!--          <button class="mask" id="tap_courseBook"/>-->
+<!--      </row>-->
+      <row class="container">
+          <label class="leftPublic">起止时间</label>
+          <label id="start_end" class="rightPublic">第2周到第16周</label>
+          <image class="line"/>
+          <button class="mask" id="tap_start_end"/>
+      </row>
+      <row class="container">
+          <button class="attend" id="attend"></button>
+      </row>
+  </col>
+   
+  <style type="text/css">
+    .wrapper {
+        width: 100%;
+        height: auto;
+    }
+    
+    .container{
+    width: 95%;
+    height: 60px;
+    float:center;
+    }
+    
+    .leftPublic{
+    v-float: center;
+    color:black;
+    width: auto;
+    height: auto;
+    font-size:15px;
+    }
+    
+    .rightPublic{
+    v-float: center;
+    color:#a4a4a4;
+    width: auto;
+    height: auto;
+    position: absolute;
+    right:0px;
+    font-size:15px;
+    }
+    
+    .line{
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    bottom:0px;
+    background-color:#f0f0f0;
+    }
+    
+    .attend{
+    width: 85%;
+    height: 80%;
+    background-color:#0F6B19;
+    font-size:20px;
+    border-radius: 5px;
+    v-float: center;
+    float: center;
+    text:签到;
+    }
+    
+    .mask{
+    width: 100%;
+    height: 100%;
+    pisition:absolute;
+    }
+  </style>
+</ui>
